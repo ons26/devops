@@ -9,7 +9,7 @@ pipeline {
         }
          stage('Build') {
             steps {
-                echo 'Building the project...'
+               build 'ons Arctic 10 pip'
             
             }
         }

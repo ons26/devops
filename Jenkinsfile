@@ -7,11 +7,12 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/ons26/devops'
             }
         }
-    }
-      stage('Build') {
+         stage('Build') {
             steps {
                 echo 'Building the project...'
             
             }
         }
+    }
+     
 }

@@ -9,7 +9,7 @@ pipeline {
         }
          stage('Build') {
             steps {
-               build 'ons Arctic 10 pip'
+               build job: 'ons Arctic 10 pip', waitForStart: true
             
             }
         }

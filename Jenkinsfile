@@ -1,18 +1,10 @@
-opipeline {
+pipeline {
     agent any
-
     stages {
-        stage('Git') {
+        stage('Build') { 
             steps {
-                git branch: 'main', url: 'https://github.com/ons26/devops'
+                sh 'mvn -B -DskipTests clean package' 
             }
         }
-        stages{
-         stage('Build') {
-               steps {
-        echo "hhh"
-               }
-         }
-
-        } 
+    }
 }

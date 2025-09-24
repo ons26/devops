@@ -1,4 +1,4 @@
-pipeline {
+opipeline {
     agent any
 
     stages {
@@ -9,7 +9,7 @@ pipeline {
         }
          stage('Build') {
                steps {
-          build 'ons Arctic 10 pip'
+        echo "hhh"
                }
 
     }
